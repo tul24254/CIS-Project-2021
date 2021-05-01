@@ -1,3 +1,4 @@
+#Hangman on Python by Justin Schneider, CIS 1051 Spring 2021
 import random
 def randword():
     while True:
@@ -58,7 +59,7 @@ def hangmain():
     print("Your word has ", len(keyword), "letters. Good Luck!")
     print()
     print(guessword)
-    print(keyword)
+    #print(keyword)
     while True:
         guess1 = guess(keyword)
         if guess1 in letters:
@@ -70,10 +71,6 @@ def hangmain():
             else:
                 print("You already guessed that!")
                 guess1 = []
-        if guess1 == correct:
-            print()
-            print("You already guessed that!")
-            guess1 = []
         correct += guess1
         print()
         print(top)
